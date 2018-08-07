@@ -1,0 +1,5 @@
+docker pull dpatriot/docker-awscli-java8 
+
+
+上一步完成后
+docker tag dpatriot/docker-awscli-java8:lastest java8:qingmu

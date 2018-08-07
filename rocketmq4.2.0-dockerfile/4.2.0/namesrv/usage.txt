@@ -1,0 +1,10 @@
+使用前，请确保证java8:qingmu 镜像已经安装 或者dockerfile头部改为FROM java:8(代表使用openjdk8)
+
+第一步:
+	运行docker_build.sh，创建镜像
+第二步：
+    运行docker_run.sh,启动容器
+ps:
+宿主机外部rocketmq配置文件，定在/data/conf/rocketmq-conf/conf,把rocketmq整个conf文件夹放在此conf文件夹下，再运行第一步
+
+如果需要修改rocketmq对应的jvm参数，在docker_run.sh内的docker run 命令中，对应更改即可。

@@ -1,0 +1,9 @@
+注意rocketmq namesrv 防火墙端口的释放 如端口9876.
+
+rocketmq console 控制台
+
+第一步：下载rocketmq控制台的镜像
+docker pull styletang/rocketmq-console-ng
+
+第二步：启动(或者运行本目录下docker_run.sh)    namesrv地址根据实际使用填写对应ip
+docker run -e "JAVA_OPTS=-Drocketmq.namesrv.addr=127.0.0.1:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" -p 9080:9080 -t styletang/rocketmq-console-ng
