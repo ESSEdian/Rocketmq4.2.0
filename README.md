@@ -38,7 +38,7 @@ cd 4.2.0/namesrv/
 Run:
 
 ```
-cd 4.2.0
+cd 4.2.0/console/
 
 ./docker_run.sh
 
