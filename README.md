@@ -8,20 +8,42 @@ This repository includes the following:
 2. Dockerfile and scripts for RocketMQ run in following 3 scenarios:
 - RocketMQ runs on single Docker daemon;
 - RocketMQ runs with docker-compose;
-- RocketMQ runs on Kubernetes.
+- RocketMQ runs with rocketmq-console;
 
 ## Quick start: Build and run RocketMQ with a single instance
 
 ### For Docker
 
-Run: 
+Run broker: 
+
+```
+cd 4.2.0/broker/
+
+./docker_build.sh
+
+./docker_run.sh
+
+```
+Run namesrv:
+
+```
+cd 4.2.0/namesrv/
+
+./docker_build.sh
+
+./docker_run.sh
+
+```
+### For console
+Run:
 
 ```
 cd 4.2.0
 
-./play-docker.sh
+./docker_run.sh
 
 ```
+
 
 ### For docker-compose
 
